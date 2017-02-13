@@ -31,7 +31,7 @@ process.on('uncaughtException', err => {
 		}
 	}
 });
-//test bro
+
 const server = require('./lib/server')
 	.on('error', () => process.exit(1))
 	.on('stopped', () => process.exit(0));
